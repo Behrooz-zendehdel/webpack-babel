@@ -1,6 +1,9 @@
 import React from "react";
 import "./Hero.css";
 import Header from "../Header/Header";
+import Heart from "../../assets/heaert.png";
+import Heroimg from "../../assets/hero.png";
+import Liner from "../../assets/liner.png";
 const Hero = () => {
   return (
     <div className="hero">
@@ -47,7 +50,21 @@ const Hero = () => {
           <button className="btn ">Learn More</button>
         </div>
       </div>
-      <div className="right-h">right side </div>
+      <div className="right-h">
+        <button className="btn ">Join Now</button>
+        <div className="heart-rate">
+          <img src={Heart} alt="" />
+          <span>Heart Rate</span> <span>116 BPM</span>
+        </div>
+        {/* hero images */}
+        <img src={Heroimg} alt="" className="hero-image" />
+        <img src={Liner} alt="" className="hero-image-back" />
+        {/* calories  */}
+        <div className="calories">
+          <span>Calories burand</span>
+          <span>220 KCal</span>
+        </div>
+      </div>
     </div>
   );
 };
