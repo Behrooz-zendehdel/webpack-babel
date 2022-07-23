@@ -1,6 +1,5 @@
 /* set font */
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700&display=swap");
-
 /* root variable */
 :root {
   --lightgary: #d9d9d9;
@@ -8,7 +7,7 @@
   --orange: #f48915;
   --darkGrey: #464d53;
   --caloryCard: #656565;
-  --panCard: linear-gradient(210, 41deg, #fa5042 1.14%, #ffa739 100.75%);
+  --plancard: linear-gradient(41deg, #fa5042 1.14%, #ffa739 100.75%);
   --appColor: #3c3f45;
 }
 
