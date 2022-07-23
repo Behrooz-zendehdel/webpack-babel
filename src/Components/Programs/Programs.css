@@ -44,7 +44,7 @@
   line-height: 25px;
 }
 .category:hover {
-  background-color: var(--orange);
+  background: var(--plancard);
   cursor: pointer;
 }
 
