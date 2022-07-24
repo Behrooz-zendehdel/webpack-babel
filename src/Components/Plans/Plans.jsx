@@ -6,7 +6,7 @@ import { plans } from "../../data/DataPlan";
 const Plans = () => {
   return (
     <div className="plans-container">
-      <div className="progrmas-header" style={{ gap: "2rem" }}>
+      <div className="progrmas-header">
         <span className="stroke-text">RREADY TO START</span>
         <span>YOUR JOURNEY</span>
         <span className="stroke-text">NOW WITHUS</span>
@@ -26,7 +26,7 @@ const Plans = () => {
               ))}
             </div>
             <div>
-              <span> see more benefits </span>
+              <span className="more"> see more benefits </span>
             </div>
             <button className="btn"> Join now</button>
           </div>
