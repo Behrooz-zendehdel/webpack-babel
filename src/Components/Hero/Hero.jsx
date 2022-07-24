@@ -4,14 +4,22 @@ import Header from "../Header/Header";
 import Heart from "../../assets/heaert.png";
 import Heroimg from "../../assets/hero.png";
 import Liner from "../../assets/liner.png";
+import { motion } from "framer-motion";
+
 const Hero = () => {
+  const transition = { type: "spring", duration: 3 };
+  const mobile = window.innerWidth <= 768 ? true : false;
   return (
     <div className="hero">
       <div className="left-h">
         <Header />
         {/* the best ad */}
         <div className="the-best-ad">
-          <div></div>
+          <motion.div
+            initial={{ left: "238px" }}
+            whileInView={{ left: "8px" }}
+            transition={{ ...transition, type: "tween" }}
+          ></motion.div>
           <span>the best fitnes club in the town</span>
         </div>
         {/* hero Heading  */}
@@ -52,13 +60,25 @@ const Hero = () => {
       </div>
       <div className="right-h">
         <button className="btn ">Join Now</button>
-        <div className="heart-rate">
+        <motion.div
+          transition={transition}
+          initial={{ right: "-1rem" }}
+          whileInView={{ right: "4rem" }}
+          className="heart-rate"
+        >
           <img src={Heart} alt="" />
           <span>Heart Rate</span> <span>116 BPM</span>
-        </div>
+        </motion.div>
         {/* hero images */}
         <img src={Heroimg} alt="" className="hero-image" />
-        <img src={Liner} alt="" className="hero-image-back" />
+        <motion.img
+          transition={transition}
+          initial={{ right: "11rem" }}
+          whileInView={{ right: "26rem" }}
+          src={Liner}
+          alt=""
+          className="hero-image-back"
+        />
         {/* calories  */}
         <div className="calories">
           <span>Calories burand</span>

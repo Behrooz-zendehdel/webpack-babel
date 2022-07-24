@@ -65,3 +65,11 @@
 .detail-r > div > span {
   text-transform: uppercase;
 }
+@media screen and (max-width: 768px) {
+  .Reasons {
+    flex-direction: column;
+  }
+  .left-r {
+    flex-direction: column;
+  }
+}
