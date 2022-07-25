@@ -12,7 +12,7 @@ const Testimonials = () => {
   const transition = { type: "spring", duration: 3 };
 
   return (
-    <div className="Testimonials">
+    <div className="testimonials" id="testimonials">
       <div className="left-t">
         <span>Tesimonials</span>
         <span className="stroke-text">what they say</span>
@@ -38,7 +38,13 @@ const Testimonials = () => {
           whileInView={{ opacity: 1, x: 0 }}
         ></motion.div>
 
-        <img src={testimonials[selected].img} alt="" />
+        <motion.img
+          initial={{ opacity: 0, x: -100 }}
+          transition={{ ...transition, duration: 2 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          src={testimonials[selected].img}
+          alt=""
+        />
         <div className="arrows">
           <img
             src={arrowRight}
@@ -50,7 +56,10 @@ const Testimonials = () => {
                 : setSelected((prev) => prev - 1);
             }}
           />
-          <img
+          <motion.img
+            initial={{ opacity: 0, x: 100 }}
+            transition={{ ...transition, duration: 2 }}
+            whileInView={{ opacity: 1, x: 0 }}
             src={arrowRight}
             alt=""
             onClick={() => {

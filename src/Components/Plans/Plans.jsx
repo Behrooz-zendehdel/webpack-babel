@@ -5,7 +5,7 @@ import tick from "../../assets/tick.png";
 import { plans } from "../../data/DataPlan";
 const Plans = () => {
   return (
-    <div className="plans-container">
+    <div className="plans-container" id="plans">
       <div className="progrmas-header">
         <span className="stroke-text">RREADY TO START</span>
         <span>YOUR JOURNEY</span>

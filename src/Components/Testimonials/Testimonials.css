@@ -1,4 +1,4 @@
-.Testimonials {
+.testimonials {
   display: flex;
   grid-area: 1re;
   padding: 0 2rem;
@@ -68,7 +68,43 @@
   top: 4rem;
 }
 @media screen and (max-width: 768px) {
-  .Testimonials {
+  .testimonials {
     flex-direction: column;
+  }
+  .left-t > :nth-child(2),
+  .left-t > :nth-child(3) {
+    font-size: xx-large;
+  }
+  .right-t {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+  }
+  .right-t > div {
+    position: relative;
+  }
+  .right-t > img {
+    top: 0;
+    right: 0;
+    position: relative;
+    align-self: center;
+    padding-top: 20px;
+  }
+  .right-t > :nth-child(1) {
+    position: absolute;
+    right: 0.5rem;
+    top: 0.5rem;
+  }
+  .right-t > :nth-child(2) {
+    position: absolute;
+    right: -1.5rem;
+    top: 1.5rem;
+  }
+  .right-t > :last-child {
+    display: block;
+    bottom: 0;
+    left: 0;
   }
 }
